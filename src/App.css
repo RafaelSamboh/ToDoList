@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(
+      90deg,
+      rgb(142, 205, 241) 0%,
+      rgba(100, 115, 255, 1) 100%
+    );
+  }
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 520px;
+    min-height: 600px;
+    background: hsla(272, 32%, 8%, 0.986);
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+  
+  h1 {
+    margin: 32px 0;
+    color: rgb(23, 136, 136);
+    font-size: 24px;
+  }
+  
+  .lista-completada {
+    color: aqua;
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: rgb(128, 18, 231);
+  }
+  
+  .todo-input::placeholder {
+    color: rgb(128, 18, 231);
+  }
+  
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgb(10, 204, 188) 0%,
+      rgb(4, 190, 247) 100%
+    );
+    color: rgb(128, 18, 231);
+    text-transform: capitalize;
+  }
+  
+  .todo-input-editar {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: rgb(128, 18, 231);
+  }
+  .todo-input-editar::placeholder{
+        color: rgb(128, 18, 231);
+  }
+  
+  .todo-button-editar {
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgb(10, 204, 188) 0%,
+      rgb(4, 190, 247) 100%
+    );
+    color: rgb(128, 18, 231);
+    text-transform: capitalize;
+    padding: 16px;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .lista-not {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: rgb(128, 18, 231);
+    background: linear-gradient(
+      90deg,
+      rgb(10, 204, 188) 0%,
+      rgb(4, 190, 247) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  .icones {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .deletar {
+    margin-right: 5px;
+    color: rgb(255, 4, 4);;
+  }
+  
+  .editar {
+    color: rgb(255, 4, 4);
+  }
