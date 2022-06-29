@@ -30,9 +30,11 @@ function TodoList() {
       let atualizaLista = listas.map(lista =>{
         if(lista.id === id){
           lista.Completada = !lista.Completada
+          
         }
         return lista
       })
+      
       setListas(atualizaLista)
     }
   return (

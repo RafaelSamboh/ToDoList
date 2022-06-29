@@ -29,9 +29,20 @@
   }
   
   .lista-completada {
-    color:#01c38d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #132d46;
+    background: #01c38d;
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
     text-decoration: line-through;
     opacity: 0.4;
+  }
+  .lista-completada>.icones>.editar{
+    display: none;
   }
   
   .todo-form {
